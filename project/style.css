@@ -11,6 +11,15 @@ body{
     height: 70px;
     background-color: rgb(37, 37, 37);
     box-shadow: 0 0 1em rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+#header-space{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
 }
 
 #logo{
@@ -20,10 +29,14 @@ body{
 
 #nav-bar ul{
     padding: 0px;
-    width: 313px;
+    width: 408px;
     float: right;
     margin-right: 60px;
     margin-top: 18px;
+}
+
+:root{
+    scroll-behavior: smooth;
 }
 
 #nav-bar li{
@@ -40,7 +53,7 @@ body{
     width: 97%;
     height: 397px;
     background-color: #eaeaea;
-    margin-top: 15px;
+    margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
 }
