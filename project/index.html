@@ -52,13 +52,13 @@
                         inscrição</p>
                     </div>
 
-                    <form id="box" method="POST" action="./formulario.php">
+                    <form id="box" name="formulario" method="POST" action="./formulario.php">
                         <h2>FORMULÁRIO</h2>
                         <input class="barra" name="nome" type="text" placeholder="Nome completo">
                         <input class="barra" name="email" type="text" placeholder="Email">
-                        <input class="barra" name="telefone" type="text" placeholder="Telefone">
+                        <input class="barra" name="telefone" type="number" placeholder="Telefone">
 
-                        <input id="send-button" type="submit" value="Enviar">
+                        <input id="send-button" type="submit" onclick="return validar()" value="Enviar">
                     </form>
 
                 </div>
@@ -69,6 +69,8 @@
 
         <footer>
         </footer>
+
+        <script src="back.js"></script>
     </body>
 
 </html>
