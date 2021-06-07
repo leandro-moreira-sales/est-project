@@ -3,6 +3,8 @@ function validar(){
     var email = formulario.email.value;
     var telefone = formulario.telefone.value;
 
+    /*Condições criadas para verificar os dados*/
+
     if(nome == ""){
         alert ("É preciso preencher o campo (nome).");
         formulario.nome.focus();

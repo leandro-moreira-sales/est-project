@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">    
         <title>Tinpix - Project</title>
     </head>
 
@@ -14,24 +16,26 @@
         <header>
             <div id="nav-bar">
                 <a href="#"><img id="logo" src="C:\Users\leand\Desktop\Est-project\est-project\project\Imgs\marvel-logo.png" alt="Logo"></a>
-
                 <ul>
                     <a class="act-click" href="#top"><li>Concurso</li></a>
                     <a class="act-click" href="#content-2"><li>Como participar</li></a>
                     <a class="act-click" href="#content-3"><li>Formulário</li></a>
                 </ul>
             </div id="header-space">
-
         </header>
 
         <section>
-
             <article>
-                <div id="top">
-                </div>
                 <div id="content">
-                    <img src="C:\Users\leand\Desktop\Est-project\est-project\project\Imgs\img-article-one.png" alt="">
-                    <h2 id="article1-title">CONCURSO</h2>
+                    <div id="textos-article1">
+                        <h2 id="article1-title">CONCURSO</h2>
+                        <p id="article1-text">No mês de junho teremos a 15° edição do maior evento de comics da américa latina, que terá 
+                            como principal evento um concurso para encontrar desenhistas talentosos que trabalharão 
+                            com a equipe de ilustração oficial da Marvel, esse evento terá uma etapa de triagem para 
+                            se candidatar através dessa página e então os candidatos selecionados serão avaliados no 
+                            dia do evento.
+                        </p>
+                    </div>
                 </div>
 
                 <div id="content-2">
@@ -46,25 +50,18 @@
                 </div>
 
                 <div id="content-3">
-                    <div id="textos-form">
-                        <h2>Não Esqueça!</h2>
-                        <p>Preencha o formulario com atenção! sendo todos os campos obrigatórios para concluir a 
-                        inscrição</p>
-                    </div>
-
                     <form id="box" name="formulario" method="POST" action="./formulario.php">
+
                         <h2>FORMULÁRIO</h2>
                         <input class="barra" name="nome" type="text" placeholder="Nome completo">
                         <input class="barra" name="email" type="text" placeholder="Email">
                         <input class="barra" name="telefone" type="number" placeholder="Telefone">
 
                         <input id="send-button" type="submit" onclick="return validar()" value="Enviar">
+
                     </form>
-
                 </div>
-            </div>
             </article>
-
         </section>
 
         <footer>
@@ -72,5 +69,4 @@
 
         <script src="back.js"></script>
     </body>
-
 </html>
